@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Gregs List</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div id="cars" class="row">
+      
+    </div>
+    <form onsubmit="app.controllers.carController.addCar(event)">
+      <label for="make">Make</label>
+      <input type="text" name="make" placeholder="Make" required>
+      <label for="model">Model</label>
+      <input type="text" name="model" required>
+      <label for="year">Year</label>
+      <input type="number" name="year" required>
+      <label for="color">Color</label>
+      <input type="text" name="color" required>
+      <button type="submit" class="btn btn-primary">Add Car</button>
+    </form>
+  </div>
+  <script src="app/main.js" type="module"></script>
+</body>
+</html>
